@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me — Bohdan Yatsuk</title>
+  <meta name="description" content="Bohdan Yatsuk, senior full-stack engineer: production TypeScript, systems close to processes and CLIs, and daily work with AI coding agents.">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --text: #1d1d1b;
+      --muted: #5f5d57;
+      --line: #e6e3dc;
+      --accent: #2f5d50;
+      --accent-soft: #e7f0ec;
+      --tag: #f2efe8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141513;
+        --surface: #1c1d1b;
+        --text: #ecebe6;
+        --muted: #a5a39b;
+        --line: #2f302d;
+        --accent: #8cc7b2;
+        --accent-soft: #1f2d28;
+        --tag: #262724;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 16px 80px; }
+    a { color: var(--accent); }
+    h1 { font-size: 2.1rem; line-height: 1.15; margin: 0 0 4px; letter-spacing: -0.01em; }
+    h2 { font-size: 1.25rem; margin: 0 0 4px; }
+    h3 { font-size: 1rem; margin: 20px 0 6px; }
+    p { margin: 0 0 12px; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .role { color: var(--muted); margin: 0 0 20px; font-size: 1.05rem; }
+    .contact { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; padding: 0; list-style: none; }
+    .contact li { margin: 0; }
+    .contact a, .contact span {
+      display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      background: var(--surface); text-decoration: none; font-size: 0.92rem; color: var(--text);
+    }
+    .contact a:hover { border-color: var(--accent); color: var(--accent); }
+    .intro { font-size: 1.06rem; }
+    section { margin-top: 44px; }
+    .criterion {
+      margin: 0 0 14px; padding: 10px 14px; border-left: 3px solid var(--accent);
+      background: var(--accent-soft); border-radius: 0 6px 6px 0; color: var(--text); font-size: 0.95rem;
+    }
+    .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+    .tag {
+      display: inline-block; font-size: 0.72rem; padding: 1px 7px; border-radius: 4px;
+      background: var(--tag); color: var(--muted); vertical-align: 1px; margin-left: 4px; white-space: nowrap;
+    }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; }
+    .timeline { list-style: none; padding: 0; }
+    .timeline li { display: grid; grid-template-columns: 150px 1fr; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); margin: 0; }
+    .timeline li:first-child { border-top: 0; }
+    .when { color: var(--muted); font-size: 0.92rem; }
+    blockquote { margin: 0 0 12px; padding: 0 0 0 14px; border-left: 2px solid var(--line); color: var(--muted); font-style: italic; }
+    .honest { font-size: 0.93rem; color: var(--muted); }
+    footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 560px) {
+      main { padding-top: 32px; }
+      h1 { font-size: 1.75rem; }
+      .timeline li { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Bohdan Yatsuk</h1>
+    <p class="role">Senior full-stack engineer · 9+ years of TypeScript · Porto, Portugal</p>
+    <ul class="contact" aria-label="Contact">
+      <li><a href="https://www.linkedin.com/in/yatsuk-bohdan-5aa640a6/">LinkedIn · linkedin.com/in/yatsuk-bohdan-5aa640a6</a></li>
+      <li><a href="tel:+351910050477">Phone · +351 910 050 477</a></li>
+      <li><a href="mailto:yatsukbogdan@gmail.com">yatsukbogdan@gmail.com</a></li>
+      <li><a href="https://github.com/YatsukBogdan1">github.com/YatsukBogdan1</a></li>
+    </ul>
+    <p class="intro">
+      I started frontend-first, with React and React Native for about six years, and for the last three I've
+      owned full-stack and backend work. Most recently, at Responsum, a multi-tenant compliance platform,
+      I replaced a third-party login vendor with an auth platform we own, built the scheduler that runs the
+      product's background work, and shipped an in-app AI agent that does real work for paying customers.
+      Before that I was team lead on Delinea's credential-manager browser extension.
+    </p>
+  </header>
+
+  <section aria-labelledby="ship">
+    <h2 id="ship">Shipping production software</h2>
+    <p class="criterion"><span class="label">You're looking for</span><br>Substantial experience shipping production software, ideally developer tools, desktop apps, or systems close to git.</p>
+    <ul>
+      <li><strong>Nine years of production work as a contractor</strong>, embedded in other teams' products and staying long enough to own the results. The job scheduler I designed at Responsum now runs 16 production job types.</li>
+      <li><strong>Delinea Credential Manager</strong>, an enterprise secrets-management browser extension for four browsers. I was a senior engineer and later team lead there, with 156 merged PRs. I led the rebuild of a large legacy extension while it stayed in production.</li>
+      <li><strong>Tooling for other developers and for machines.</strong> I built custom ESLint rules that enforce architectural boundaries in CI. I also built an OAuth 2.1 authorization server and a remote MCP server (19 tools, 4 prompts) that let third-party AI clients authenticate against the platform with tenant-scoped, audience-bound tokens.</li>
+      <li><strong>Desktop and device-side work, in personal projects.</strong> <code>ai-augmented-search-engine</code> is a privacy-first desktop semantic search app (Tauri + React + Fastify) that indexes local files with on-device embeddings. <code>padel-recording</code> runs a camera agent on a Raspberry Pi behind a venue's NAT and has been installed at a real court.<span class="tag">personal</span></li>
+    </ul>
+    <p class="honest">Honest boundary: I haven't shipped Electron in production, and my desktop-app experience comes from personal projects. My production work closest to this is the browser extension: a multi-process client app with an MV3 service worker.</p>
+  </section>
+
+  <section aria-labelledby="ts">
+    <h2 id="ts">TypeScript, close to processes, file systems and CLIs</h2>
+    <p class="criterion"><span class="label">You're looking for</span><br>Strong TypeScript, or the depth to pick it up fast, and comfort working close to processes, file systems, and CLIs.</p>
+    <ul>
+      <li><strong>TypeScript has been my primary language for nine years</strong>, across React 19 SPAs, Node.js/NestJS/Express services, React Native and MV3 browser extensions.</li>
+      <li><strong>Concurrency and process boundaries.</strong> My scheduler claims jobs per instance and verifies leases. It dispatches in batches into an 8-thread worker pool for backpressure, and it recovers jobs orphaned when an instance dies. In the Delinea extension I kept caches coherent across four processes, and I root-caused an <code>IntersectionObserver</code> race, pinning the exact interleaving in a unit test.</li>
+      <li><strong>Distributed coordination primitives in Redis:</strong> run locks, a <code>SETNX</code> write mutex with ownership-checked release, cross-instance abort over pub/sub, and <code>INCR</code> rate limiting per email <em>and</em> per IP.</li>
+      <li><strong>Operational scripts that are safe to re-run.</strong> I ran 20+ production migrations across a database-per-tenant MongoDB fleet, each with a dry-run mode and idempotent re-runs.</li>
+      <li><strong>Pipes and processes on real hardware.</strong> The padel camera agent pipes <code>rpicam</code> into <code>ffmpeg</code>, cuts the output into 5 MiB parts and uploads them while the match is still being recorded. My job-search tooling runs on launchd plists, an <code>install.sh</code> and scheduled <code>claude -p</code> jobs.<span class="tag">personal</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="agents">
+    <h2 id="agents">AI coding agents, used in anger</h2>
+    <p class="criterion"><span class="label">You're looking for</span><br>You've used AI coding agents in anger and have informed opinions about where they break.</p>
+    <p>
+      I use Claude Code every day in an agentic setup, with shared <code>CLAUDE.md</code> context, custom skills and MCP servers.
+      Claude co-authored my commits at Delinea. The knowledge base this page was built from is itself a Claude Code
+      project: job scanning across six sources, fit evaluations and email-driven pipeline tracking, all run by skills and
+      scheduled jobs. Deterministic scripts do the fetching and deduplication, and the model only does the judging.
+      I've also opened a PR against the official MCP TypeScript SDK.
+    </p>
+    <h3>Where I've seen them break</h3>
+    <ul>
+      <li><strong>Verification is now the bottleneck.</strong> Agents are very good at the mechanical middle of the job: boilerplate, test scaffolding, getting oriented in unfamiliar code, first-draft refactors, migrations. The cost has moved from writing code to checking it, and reviewing generated code properly is slower than people admit. My rule: I don't ship anything I couldn't have written and can't explain.</li>
+      <li><strong>Plausible code where nobody has a model of "correct".</strong> Auth, money and concurrency are where I've seen this hurt teams.</li>
+      <li><strong>Context runs out on a large codebase.</strong> What works for me is a condensed summary that's read by default, deep dives opened only on demand, and skills that name exactly which files to read.</li>
+      <li><strong>Tool loops fail like distributed systems.</strong> I learned this building the Responsum agent. A user refreshing mid-tool-call leaves an orphaned call that makes the LLM API reject the whole history, so I heal it with synthetic results. Tools never throw into the loop; they return <code>{ok, data | error}</code> so the model can recover. The model also gets exactly the same server-side validation as a human user.</li>
+      <li><strong>Design tools around how models fail.</strong> On the MCP server, the guardrail layer returns structured violations the model can correct itself from, instead of opaque errors.</li>
+    </ul>
+    <p class="honest">Honest boundary: that agent had tool-call trace logging and scenario review on real tenant data, but no formal offline eval suite. That's the first thing I'd add next time.</p>
+  </section>
+
+  <section aria-labelledby="default">
+    <h2 id="default">Defaulting to shipping</h2>
+    <p class="criterion"><span class="label">You're looking for</span><br>You default to shipping: small PRs, tight feedback loops, no big-bang rewrites.</p>
+    <ul>
+      <li><strong>Small PRs, often.</strong> My tracked GitHub history has 571 pull requests to the admin web app, mobile app and chat-microservice repos over 2021–2024, including 306 in 2023 alone, more than one per working day.</li>
+      <li><strong>No big-bang rewrites.</strong> I rebuilt Delinea's legacy browser extension while it stayed in production. At Responsum the move off Keycloak to first-party auth happened step by step over two years across two products.</li>
+      <li><strong>Tight feedback loops, made mechanical.</strong> Instead of re-arguing review comments, I turned the non-negotiable rules into ESLint rules, so layering violations fail in CI rather than in a reviewer's opinion.</li>
+      <li><strong>Feedback from the cheapest point.</strong> On Responsum's task manager I raised a confusing three-in-one action button in a grooming call before any code was written, and the design changed. On a backend bug that had been stuck for days, I ran the query directly against MongoDB and fixed the aggregation order the same day: from about 1,000 ms to about 200 ms.</li>
+      <li><strong>Fix what the field tells you.</strong> After the first real install of the padel recorder, the control WebSocket was dying silently on NAT timeouts. I shipped heartbeats, reconnects with jittered backoff and per-command acknowledgements.<span class="tag">personal</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="history">
+    <h2 id="history">Where I've worked</h2>
+    <div class="card">
+      <ul class="timeline">
+        <li><span class="when">Aug 2024 – present</span><span><strong>Responsum</strong> · contract · Senior Software Engineer. Multi-tenant GRC platform: OAuth 2.1 + MCP server, Keycloak replacement, job scheduler, in-app AI agent.</span></li>
+        <li><span class="when">Mar 2019 – Jun 2026</span><span><strong>GlobalLogic</strong> · contract · Senior Engineer → Team Lead. Clients: Delinea (identity and privileged-access security), Magnite.</span></li>
+        <li><span class="when">Mar 2021 – Aug 2024</span><span><strong>Affinitee</strong> (via AllStarsIT) · contract · Senior Software Engineer. Real-time group messaging across a five-service system, landlord CRM frontend, React Native.</span></li>
+        <li><span class="when">Mar 2018 – Mar 2019</span><span><strong>Cpamatica</strong> · Software Engineer. React Native and Node.js mobile apps, real-time chat.</span></li>
+      </ul>
+    </div>
+    <p class="honest" style="margin-top:12px">The overlapping dates are deliberate: I've contracted throughout and ran engagements in parallel for several years.</p>
+  </section>
+
+  <footer>
+    Everything on this page comes from my own notes: interview prep, application answers, my GitHub history and my CV.
+  </footer>
+</main>
+</body>
+</html>
